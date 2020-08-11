@@ -1,0 +1,29 @@
+{
+  "name": "nuber-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cscim918/nuber-server.git",
+  "author": "yunbo <cscim918@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "graphql-tools": "^6.0.18",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^4.0.0",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/helmet": "^0.0.47",
+    "@types/morgan": "^1.9.1",
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+  }
+}

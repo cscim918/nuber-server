@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "graphql-playground-middleware-express": "^1.7.18",
     "graphql-tools": "^6.0.18",
     "graphql-yoga": "^1.18.3",
     "helmet": "^4.0.0",

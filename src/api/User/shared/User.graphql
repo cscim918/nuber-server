@@ -1,0 +1,17 @@
+type User {
+  phoneNumber: String
+  verifiedPhonenNumber: Boolean!
+  profilePhoto: String
+  fullName: String
+  isDriving: Boolean!
+  isRiding: Boolean!
+  isTaken: Boolean!
+  lastLng: Float
+  lastLat: Float
+  lastOrientation: Float
+  createdAt: String!
+  updatedAt: String
+}
+type Query{
+    user: User
+}

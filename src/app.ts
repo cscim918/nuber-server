@@ -6,7 +6,7 @@ import schema from "./schema";
 
 class App {
   public app: GraphQLServer;
-  constructor() {
+  constructor() { //App 클래스를 새로 시작할 때마다 호출되는 함수, App 클래스를 어떻게 형성할지 정하는 함수
     this.app = new GraphQLServer({
       schema
     });

@@ -10,8 +10,10 @@
     "@types/bcrypt": "^3.0.0",
     "@types/cors": "^2.8.7",
     "@types/helmet": "^0.0.47",
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/morgan": "^1.9.1",
     "@types/node": "^14.0.27",
+    "@types/twilio": "^2.11.0",
     "gql-merge": "^0.0.6",
     "graphql-to-typescript": "^0.1.2",
     "nodemon": "^2.0.4",
@@ -28,10 +30,11 @@
     "graphql-tools": "^6.0.10",
     "graphql-yoga": "^1.18.3",
     "helmet": "^3.23.1",
+    "jsonwebtoken": "^8.5.1",
     "merge-graphql-schemas": "^1.7.8",
     "morgan": "^1.10.0",
     "pg": "^8.3.0",
-    "twilio": "^3.47.0",
+    "twilio": "^3.48.2",
     "typeorm": "^0.2.25"
   },
   "scripts": {

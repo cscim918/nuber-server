@@ -1,7 +1,6 @@
 import bcrypt from "bcrypt";
 import { IsEmail } from "class-validator";
 import Ride from "./Ride";
-import Verification from "./Verification";
 import {
     BaseEntity,
     BeforeInsert,
@@ -47,7 +46,7 @@ class User extends BaseEntity {
     phoneNumber: string;
 
     @Column({ type: "boolean", default: false })
-    verifiedPhonenNumber: boolean;
+    verifiedPhoneNumber: boolean;
 
     @Column({ type: "text" })
     profilePhoto: string;
@@ -78,9 +77,6 @@ class User extends BaseEntity {
 
     @OneToMany(type => Message, message => message.user)
     messages: Message[];
-
-    @OneToMany(type => Verification, verification => verification.user)
-    verifications: Verification[];
 
     @OneToMany(type => Ride, ride => ride.passenger)
     ridesAsPassenger: Ride[];

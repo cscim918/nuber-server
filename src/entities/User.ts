@@ -1,6 +1,5 @@
 import bcrypt from "bcrypt";
 import { IsEmail } from "class-validator";
-import Ride from "./Ride";
 import {
     BaseEntity,
     BeforeInsert,
@@ -15,6 +14,7 @@ import {
 } from "typeorm";
 import Chat from './Chat';
 import Message from './Message';
+import Ride from "./Ride";
 
 const BCRYPT_ROUNDS = 10; //총 몇 번을 암호화 할거냐에 대해서 적어두는 값
 

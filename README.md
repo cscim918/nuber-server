@@ -21,9 +21,10 @@
 
 ### Private Resolvers:
 
-- [ ] Verify Email
-- [ ] Get my Profile
-- [ ] Update my Profile
+- [o] Get my Profile
+- [o] Request Email Verification
+- [o] Complete Email Verification
+- [o] Update my Profile
 - [ ] Toggle Driving Mode
 - [ ] Report location / orientation
 - [ ] Add Place

@@ -25,22 +25,23 @@
 - [o] Request Email Verification
 - [o] Complete Email Verification
 - [o] Update my Profile
-- [ ] Toggle Driving Mode
-- [ ] Report location / orientation
-- [ ] Add Place
-- [ ] Edit Place
-- [ ] Delete Place
-- [ ] See Nearby Drivers
-- [ ] Subscribe to Nearby Drivers
-- [ ] Request a Ride
-- [ ] Get Nearby Ride Requests
-- [ ] Subscribe to Nearby Ride Requests
-- [ ] Subscribe to Ride Status
-- [ ] Get Chat Room Messages
-- [ ] Subscribe to Chat Room Messages
-- [ ] Send a Chat Message
+- [o] Toggle Driving Mode
+- [x] Report location / orientation
+- [o] Add Place
+- [o] Edit Place
+- [o] Delete Place
+- [] Get My Places
+- [] See Nearby Drivers
+- [] Subscribe to Nearby Drivers
+- [] Request a Ride
+- [] Get Nearby Ride Requests
+- [] Subscribe to Nearby Ride Requests
+- [] Subscribe to Ride Status
+- [] Get Chat Room Messages
+- [] Subscribe to Chat Room Messages
+- [] Send a Chat Message
 
 ## Code Challenge
 
-- [ ] Get Ride History
-- [ ] See Ride Detail
+- [] Get Ride History
+- [] See Ride Detail

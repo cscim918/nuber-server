@@ -14,6 +14,7 @@ import {
 } from "typeorm";
 import Chat from './Chat';
 import Message from './Message';
+import Place from "./Place";
 import Ride from "./Ride";
 
 const BCRYPT_ROUNDS = 10; //총 몇 번을 암호화 할거냐에 대해서 적어두는 값
@@ -39,7 +40,7 @@ class User extends BaseEntity {
     @Column({ type: "int", nullable: true })
     age: number;
 
-    @Column({ type: "text", nullable: true})
+    @Column({ type: "text", nullable: true })
     password: string;
 
     @Column({ type: "text", nullable: true })
@@ -83,6 +84,9 @@ class User extends BaseEntity {
 
     @OneToMany(type => Ride, ride => ride.driver)
     ridesAsDriver: Ride[];
+
+    @OneToMany(type => Place, place => place.user)
+    places: Place[];
 
     @CreateDateColumn() createdAt: string;
     @UpdateDateColumn() updatedAt: string;

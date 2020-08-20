@@ -30,7 +30,7 @@
 - [o] Add Place
 - [o] Edit Place
 - [o] Delete Place
-- [] Get My Places
+- [o] Get My Places
 - [] See Nearby Drivers
 - [] Subscribe to Nearby Drivers
 - [] Request a Ride

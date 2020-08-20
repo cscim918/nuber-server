@@ -1,6 +1,6 @@
 import cors from "cors";
 import { NextFunction,Response } from "express";
-import { GraphQLServer } from "graphql-yoga";
+import { GraphQLServer, PubSub } from "graphql-yoga";
 import helmet from "helmet";
 import logger from "morgan";
 import schema from "./schema";
@@ -8,12 +8,16 @@ import decodeJWT from './utils/decodeJWT';
 
 class App {
   public app: GraphQLServer;
+  public pubSub: any;
   constructor() { //App 클래스를 새로 시작할 때마다 호출되는 함수, App 클래스를 어떻게 형성할지 정하는 함수
+    this.pubSub = new PubSub();
+    this.pubSub.ee.setMaxListeners(99);
     this.app = new GraphQLServer({
       schema,
       context: req =>{
         return{
-          req: req.request
+          req: req.request,
+          pubSub: this.pubSub
         };
       }
     });

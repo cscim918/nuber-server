@@ -31,10 +31,10 @@
 - [o] Edit Place
 - [o] Delete Place
 - [o] Get My Places
-- [] See Nearby Drivers
-- [] Subscribe to Nearby Drivers
-- [] Request a Ride
-- [] Get Nearby Ride Requests
+- [o] See Nearby Drivers
+- [o] Subscribe to Nearby Drivers
+- [o] Request a Ride
+- [o] Get Nearby Ride Requests
 - [] Subscribe to Nearby Ride Requests
 - [] Subscribe to Ride Status
 - [] Get Chat Room Messages
